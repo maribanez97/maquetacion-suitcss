@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maquetación en SUITCSS</title>
 
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=north_east" />
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
@@ -13,10 +15,10 @@
 
     <header class="Header">
         <img class="Header-logo" src="./img/logo.png" alt="Logo">
-        <ul class="Header-menu">
-            <li class="isActive">All Prints</li>
-            <li>About Us</li>
-            <li>Contact</li>
+        <ul class="Header-menu u-listNoStyle">
+            <li><a class="Header-menu-nav u-linkNoStyle" href="./index.html">All Prints</a></li>
+            <li><a class="Header-menu-nav u-linkNoStyle" href="#">About Us</a></li>
+            <li><a class="Header-menu-nav u-linkNoStyle" href="#">Contact</a></li>
         </ul>
     </header>
 
@@ -38,8 +40,9 @@
             <img src="./img/print-port-13.jpg" alt="Poster 12" class="Content-galeria-img">
         </div>
         <div class="Content-pieGaleria">
-            <i></i>
-            <p>Show more</p>
+            <i class="material-symbols-outlined">
+                north_east</i>
+            <p class="Content-pieGaleria-texto">Show more</p>
         </div>
     </main>
 
@@ -47,13 +50,28 @@
 
     <footer class="Footer">
         <p class="Footer-texto">All rights reserved O Qode Interective 2020</p>
-        <ul class="Footer-lista">
-            <li>Intagram</li>
-            <li>Facebook</li>
-            <li>Behance</li>
-            <li>Pinterest</li>
+        <ul class="Footer-lista u-listNoStyle">
+            <li><a class="u-linkNoStyle" href="#">Intagram</a></li>
+            <li><a class="u-linkNoStyle" href="#">Facebook</a></li>
+            <li><a class="u-linkNoStyle" href="#">Behance</a></li>
+            <li><a class="u-linkNoStyle" href="#">Pinterest</a></li>
         </ul>
     </footer>
+
+
+    <script>
+
+        const menuNav = document.querySelectorAll(".Header-menu-nav");
+        menuNav.forEach(item => {
+            item.addEventListener('click', function (event) {
+                event.preventDefault();
+                menuNav.forEach(link => link.classList.remove('isSelected'));
+
+                item.classList.add('isSelected');
+            });
+        });
+
+    </script>
 
 </body>
 
