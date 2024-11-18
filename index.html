@@ -11,33 +11,33 @@
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
-<body>
+<body class="Body">
 
     <header class="Header">
         <img class="Header-logo" src="./img/logo.png" alt="Logo">
-        <ul class="Header-menu u-listNoStyle">
-            <li><a class="Header-menu-nav u-linkNoStyle" href="./index.html">All Prints</a></li>
-            <li><a class="Header-menu-nav u-linkNoStyle" href="#">About Us</a></li>
-            <li><a class="Header-menu-nav u-linkNoStyle" href="#">Contact</a></li>
+        <ul class="Nav u-listNoStyle">
+            <li><a class="Nav-link u-linkNoStyle" href="./index.html">All Prints</a></li>
+            <li><a class="Nav-link u-linkNoStyle" href="#">About Us</a></li>
+            <li><a class="Nav-link u-linkNoStyle" href="#">Contact</a></li>
         </ul>
     </header>
 
     <main class="Content">
         <p class="Content-texto">Check out some stuff we have worked on with and work spaning across several different
             mediums including digital prints, company branding & more.</p>
-        <div class="Content-galeria">
-            <img src="./img/print-port-1.jpg" alt="Poster 1" class="Content-galeria-img">
-            <img src="./img/print-port-2.jpg" alt="Poster 2" class="Content-galeria-img">
-            <img src="./img/print-port-3.jpg" alt="Poster 3" class="Content-galeria-img">
-            <img src="./img/print-port-4.jpg" alt="Poster 4" class="Content-galeria-img">
-            <img src="./img/print-port-5-1.jpg" alt="Poster 5" class="Content-galeria-img">
-            <img src="./img/print-port-6.jpg" alt="Poster 6" class="Content-galeria-img">
-            <img src="./img/print-port-8.jpg" alt="Poster 7" class="Content-galeria-img">
-            <img src="./img/print-port-9.jpg" alt="Poster 8" class="Content-galeria-img">
-            <img src="./img/print-port-10.jpg" alt="Poster 9" class="Content-galeria-img">
-            <img src="./img/print-port-11.jpg" alt="Poster 10" class="Content-galeria-img">
-            <img src="./img/print-port-12.jpg" alt="Poster 11" class="Content-galeria-img">
-            <img src="./img/print-port-13.jpg" alt="Poster 12" class="Content-galeria-img">
+        <div class="Galeria">
+            <img src="./img/print-port-1.jpg" alt="Poster 1" class="Galeria-img">
+            <img src="./img/print-port-2.jpg" alt="Poster 2" class="Galeria-img">
+            <img src="./img/print-port-3.jpg" alt="Poster 3" class="Galeria-img">
+            <img src="./img/print-port-4.jpg" alt="Poster 4" class="Galeria-img">
+            <img src="./img/print-port-5-1.jpg" alt="Poster 5" class="Galeria-img">
+            <img src="./img/print-port-6.jpg" alt="Poster 6" class="Galeria-img">
+            <img src="./img/print-port-8.jpg" alt="Poster 7" class="Galeria-img">
+            <img src="./img/print-port-9.jpg" alt="Poster 8" class="Galeria-img">
+            <img src="./img/print-port-10.jpg" alt="Poster 9" class="Galeria-img">
+            <img src="./img/print-port-11.jpg" alt="Poster 10" class="Galeria-img">
+            <img src="./img/print-port-12.jpg" alt="Poster 11" class="Galeria-img">
+            <img src="./img/print-port-13.jpg" alt="Poster 12" class="Galeria-img">
         </div>
         <div class="Content-pieGaleria">
             <i class="material-symbols-outlined">
@@ -61,7 +61,7 @@
 
     <script>
 
-        const menuNav = document.querySelectorAll(".Header-menu-nav");
+        const menuNav = document.querySelectorAll(".Nav-link");
         menuNav.forEach(item => {
             item.addEventListener('click', function (event) {
                 event.preventDefault();
